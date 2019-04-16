@@ -6,5 +6,6 @@ get '/' do
 end
 
 get '/cat' do
+  @name = ["Gary", "Billo", "Fluff"].sample
   erb(:index)
 end
